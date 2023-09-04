@@ -59,40 +59,39 @@ sr.reveal('.contact__input',{interval: 200});
 //email.js
 
 
-// controls
+// // controls
+// document.addEventListener('DOMContentLoaded', () => {
+// const prevBtn = document.getElementById('prevBtn');
+// const nextBtn = document.getElementById('nextBtn');
+// const gridItems = document.querySelectorAll('.project__img');
 
-const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const gridItems = document.querySelectorAll('.project__img');
+// let currentIndex = 0;
 
-    let currentIndex = 0;
+// function updateVisibleItems() {
+//     gridItems.forEach((item, index) => {
+//         if (index >= currentIndex && index < currentIndex + 3) {
+//             item.classList.remove('hidden');
+//         } else {
+//             item.classList.add('hidden');
+//         }
+//     });
+// }
 
-    function updateVisibleItems() {
-      gridItems.forEach((item, index) => {
-        if (index >= currentIndex && index < currentIndex + 3) {
-          item.classList.remove('hidden');
-        } else {
-          item.classList.add('hidden');
-        }
-      });
-    }
+// prevBtn.addEventListener('click', () => {
+  
+//     if (currentIndex > 0) {
+//         currentIndex--;
+//         updateVisibleItems();
+//     }
+// });
 
-    prevBtn.addEventListener('click', () => {
-      if (currentIndex > 0) {
-        currentIndex--;
-        // console.log("heyyy")
-        updateVisibleItems();
-      }
-    });
+// nextBtn.addEventListener('click', () => {
+//     if (currentIndex < gridItems.length - 3) {
+//         currentIndex++;
+//         updateVisibleItems();
+//     }
+// });
 
-    nextBtn.addEventListener('click', () => {
-      // console.log("heyyy")
-      if (currentIndex < gridItems.length - 3) {
-        currentIndex++;
-        // console.log("heyyy")
-        updateVisibleItems();
-      }
-    });
+// updateVisibleItems();
 
-    updateVisibleItems();
-
+// });
